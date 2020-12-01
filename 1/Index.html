@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes colobok {
+            from {
+                top: 0px;
+                left: 0px;
+                transform: rotate(0deg);
+            }
+
+            to {
+                top: calc(100vh - 100px);
+                left: calc(100vw - 100px);
+                transform: rotate(calc(-360deg*3));
+            }
+        }
+
+        img {
+            width: 100px;
+            position: absolute;
+            animation: colobok 3s ease-in-out infinite alternate-reverse 0.5s;
+        }
+
+        body {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="kolobok.jpg" alt="image">
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --img-size-: 500px;
+        }
+
+        .t img {
+            width: calc(var(--img-size-) / 10);
+            height: calc(var(--img-size-) / 10);
+            filter: grayscale(50%);
+            margin-top: 300px;
+            transition: 5s;
+            border-style: solid;
+        }
+
+        .t img:hover {
+            width: var(--img-size-);
+            height: var(--img-size-);
+            transition: 8s;
+            filter: grayscale(10%);
+            filter: blur(1px);
+            filter: brightness(0.4);
+            filter: contrast(200%);
+            filter: drop-shadow(26px 26px 30px rgb(155, 7, 147));
+            transform: rotate3d(2, -1, -1, -0.5turn);
+        }
+
+        .t {
+            text-align: center;
+        }
+
+        .k img {
+            width: calc(var(--img-size-) / 10);
+            height: calc(var(--img-size-) / 10);
+            filter: grayscale(50%);
+            margin-top: 300px;
+            transition: 5s;
+            border-style: solid;
+        }
+
+        .k img:hover {
+            width: var(--img-size-);
+            height: var(--img-size-);
+            transition: 8s;
+            filter: grayscale(10%);
+            filter: blur(1px);
+            filter: brightness(0.4);
+            filter: contrast(200%);
+            filter: drop-shadow(26px 26px 30px rgb(155, 7, 147));
+            transform: rotate3d(0, 0, 1, 360deg)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="t">
+        <img src="000000843.jpg" alt="images">
+        <img src="50569ac974c29121ff9075e45a334942.jpg" alt="images">
+        <img src="5e8ad435cae7a.jpg" alt="images">
+        <img src="depositphotos_1337508-stock-photo-a-free-flying-white-dove.jpg" alt="images">
+        <img src="VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg" alt="images">
+    </div>
+    <div class="k">
+        <img src="000000843.jpg" alt="images">
+        <img src="50569ac974c29121ff9075e45a334942.jpg" alt="images">
+        <img src="5e8ad435cae7a.jpg" alt="images">
+        <img src="depositphotos_1337508-stock-photo-a-free-flying-white-dove.jpg" alt="images">
+        <img src="VOLKI-krasivye-i-ochen-umnye-zhivotnye.jpg" alt="images">
+    </div>
+</body>
+
+</html>
